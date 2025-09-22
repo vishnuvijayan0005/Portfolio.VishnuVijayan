@@ -4,6 +4,8 @@ import "./index.css";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/section/Home";
+import { About } from "./components/section/About";
+import { Project } from "./components/section/Project";
 function App() {
   const [isLoaded, setLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +20,8 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
+        <About />
+        <Project />
       </div>
     </>
   );
