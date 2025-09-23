@@ -35,7 +35,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         About
       </a>
       <a
-        href="#projects"
+        href="#project"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
@@ -51,6 +51,18 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         }`}
       >
         Contact
+      </a>
+      <a
+        onClick={() => setMenuOpen(false)}
+        href="./vishnu_vijayan___fullstack"
+        download="VishnuVijayan_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`border border-blue-500 text-blue-500 px-4 py-1.5 rounded-full text-2xl font-semibold hover:bg-blue-500 hover:text-white transition-colors duration-300 ${
+          menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
+        Resume
       </a>
     </div>
   );
