@@ -31,7 +31,7 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-teal-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
@@ -90,37 +90,43 @@ export const Contact = () => {
             </button>
           </form>
 
-          {/* Social and Email Links Section */}
-          <div className="mt-8 text-center text-gray-400">
-            <p className="mb-4">You can also reach me directly at:</p>
-            <div className="flex justify-center items-center space-x-6">
+          {/* === MODIFIED SOCIAL LINKS SECTION === */}
+          <div className="mt-12 text-center text-gray-400">
+            <p className="mb-6">Or, find me on these platforms:</p>
+            {/* Flex container is now mobile-first (column) and switches to row on larger screens */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
+              {/* Email Link */}
               <a
                 href="mailto:vishnuvijayan90721@gmail.com"
-                className="flex items-center space-x-2 text-cyan-300 hover:text-cyan-400 transition-colors"
+                className="flex items-center space-x-3 text-cyan-300 hover:text-cyan-400 transition-all duration-300 hover:scale-105"
                 title="Send an email"
               >
                 <i className="fas fa-envelope text-xl"></i>
-                <span className="hidden sm:inline">✉️Email</span>
+                <span>✉️ Email</span>
               </a>
+
               <a
                 href="https://www.linkedin.com/in/vishnu-vijayan03"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-blue-400 hover:text-blue-500 transition-colors"
+                className="flex items-center space-x-3 text-blue-400 hover:text-blue-500 transition-all duration-300 hover:scale-105"
                 title="Connect on LinkedIn"
               >
                 <i className="fab fa-linkedin-in text-xl"></i>
-                <span className="hidden sm:inline">💼LinkedIn</span>
+
+                <span>💼 LinkedIn</span>
               </a>
+
               <a
                 href="https://github.com/vishnuvijayan0005"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors"
+                className="flex items-center space-x-3 text-white hover:text-gray-300 transition-all duration-300 hover:scale-105"
                 title="Follow on GitHub"
               >
                 <i className="fab fa-github text-xl"></i>
-                <span className="hidden sm:inline">💻GitHub</span>
+
+                <span>💻 GitHub</span>
               </a>
             </div>
           </div>
